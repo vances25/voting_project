@@ -187,7 +187,7 @@ export default function About() {
             <p className={styles.quoteText}>
              When you understand how these algorithms work, you become harder to manipulate.
             </p>
-            <p className={styles.quoteAuthor}>— Project Creator</p>
+            <p className={styles.quoteAuthor}>— Vance Schaefer</p>
           </aside>
         </section>
 
