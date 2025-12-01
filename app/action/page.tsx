@@ -50,7 +50,7 @@ export default function TakeAction() {
               <em>What doesn’t show up here?</em>
             </p>
             <a
-              href="/social-media-effects"
+              href="/effects"
               className={styles.actionButton}
             >
               Revisit Social Media Effects →
@@ -70,7 +70,7 @@ export default function TakeAction() {
               “Is there actual evidence behind this?”
             </p>
             <a
-              href="/data-evidence"
+              href="/data"
               className={styles.actionButton}
             >
               Explore Data &amp; Evidence →
