@@ -1,0 +1,446 @@
+/* Overall page wrapper */
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #4a6578;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main content area */
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 80px;
+  gap: 40px;
+}
+
+/* ---------------------------------------------------
+   HERO
+--------------------------------------------------- */
+
+.hero {
+  width: 80%;
+  max-width: 1100px;
+  margin-top: 0px;
+  background-color: #f9ebd9;
+  border-radius: 20px;
+  padding: 48px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+}
+
+.heroText {
+  flex: 1.4;
+  color: #2b4763;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  color: #9a7a5b;
+}
+
+.heroText h1 {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  margin: 0 0 16px;
+}
+
+.heroText p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 10px;
+}
+
+.heroText strong {
+  font-weight: 700;
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage img {
+  width: 100%;
+  max-width: 620px;
+  border-radius: 24px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------------------------------------------------
+   SNAPSHOT ROW
+--------------------------------------------------- */
+
+.snapshot {
+  width: 80%;
+  max-width: 1100px;
+  background-color: #f9ebd9;
+  border-radius: 20px;
+  padding: 32px 40px 36px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.snapshot h2 {
+  margin: 0 0 20px;
+  font-size: 1.7rem;
+  color: #2b4763;
+}
+
+.snapshotGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.snapshotCard {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 18px 18px 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.snapshotCard h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #2b4763;
+}
+
+.snapshotCard p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #37536b;
+}
+
+/* ---------------------------------------------------
+   RESEARCH TIMELINE
+--------------------------------------------------- */
+
+.timelineSection {
+  width: 80%;
+  max-width: 1100px;
+  background-color: #f9ebd9;
+  border-radius: 20px;
+  padding: 32px 40px 36px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.timelineSection h2 {
+  margin: 0 0 20px;
+  font-size: 1.7rem;
+  color: #2b4763;
+}
+
+/* list container */
+.timelineList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* each step row */
+.timelineItem {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+  align-items: flex-start;
+}
+
+/* marker column (number + line) */
+.timelineMarker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* vertical line */
+.timelineMarker::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: -24px;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(#f2cfaa, #e3b27f);
+  opacity: 0.8;
+}
+
+/* number bubble */
+.timelineNumber {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background-color: #f2cfaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #243b54;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* main content (image + text) */
+.timelineContent {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+/* image thumbnail */
+.timelineImage {
+  flex-shrink: 0;
+  width: 130px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.timelineImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* text column */
+.timelineBody {
+  flex: 1;
+}
+
+.timelineBody h3 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  color: #2b4763;
+}
+
+.timelineBody p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #37536b;
+}
+
+/* remove line after last item */
+.timelineItem:last-child .timelineMarker::after {
+  display: none;
+}
+
+/* responsive tweak */
+@media (max-width: 900px) {
+  .timelineItem {
+    column-gap: 14px;
+  }
+
+  .timelineContent {
+    flex-direction: column;
+  }
+
+  .timelineImage {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/* ---------------------------------------------------
+   WHY THIS MATTERS + QUOTE
+--------------------------------------------------- */
+
+.whySection {
+  width: 80%;
+  max-width: 1100px;
+  background-color: #f9ebd9;
+  border-radius: 20px;
+  padding: 32px 40px 36px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.whyText h2 {
+  margin: 0 0 12px;
+  font-size: 1.7rem;
+  color: #2b4763;
+}
+
+.whyText p {
+  margin: 0 0 10px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #37536b;
+}
+
+.whyText strong {
+  font-weight: 700;
+}
+
+.quoteCard {
+  background-color: #2b4763;
+  color: #f9ebd9;
+  border-radius: 18px;
+  padding: 24px 24px 22px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.quoteMark {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 0;
+  opacity: 0.4;
+}
+
+.quoteText {
+  margin: 6px 0 10px;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.quoteAuthor {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* ---------------------------------------------------
+   CREATOR CARD
+--------------------------------------------------- */
+
+.creatorSection {
+  width: 80%;
+  max-width: 1100px;
+}
+
+.creatorCard {
+  margin-top: 8px;
+  background-color: #f9ebd9;
+  border-radius: 20px;
+  padding: 28px 36px 30px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.creatorAvatar {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 20%, #f4c1a6, #4a6578);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.creatorAvatar img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.creatorText {
+  flex: 1;
+  color: #2b4763;
+}
+
+.creatorText h2 {
+  margin: 0 0 10px;
+  font-size: 1.6rem;
+}
+
+.creatorText p {
+  margin: 0 0 10px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #37536b;
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .hero,
+  .snapshot,
+  .timelineSection,
+  .whySection,
+  .creatorSection {
+    width: 90%;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroImage {
+    width: 100%;
+  }
+
+  .heroImage img {
+    max-width: 560px;
+  }
+
+  .snapshotGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .whySection {
+    grid-template-columns: 1fr;
+  }
+
+  .creatorCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timelineItem {
+    column-gap: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 32px 24px;
+    margin-top: 0px;
+  }
+
+  .heroText h1 {
+    font-size: 2rem;
+  }
+
+  .snapshot,
+  .timelineSection,
+  .whySection,
+  .creatorSection .creatorCard {
+    padding: 24px 20px;
+  }
+
+  .creatorCard {
+    padding: 24px 20px;
+  }
+
+  .creatorAvatar {
+    width: 96px;
+    height: 96px;
+  }
+}

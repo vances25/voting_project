@@ -1,0 +1,297 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  background: #4a6578;            /* slate blue like other pages */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MAIN WRAPPER */
+.main {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* HERO SECTION */
+
+.hero {
+  background: #f7e7cf;            /* warm beige card */
+  border-radius: 20px;
+  padding: 56px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.heroText {
+  max-width: 60%;
+  color: #223a52;
+}
+
+.heroLabel {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #b1926b;
+  margin-bottom: 12px;
+}
+
+.heroText h1 {
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin: 0 0 16px;
+}
+
+.heroText p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.heroChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.heroChips span {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #f0d5ad;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2b4763;
+}
+
+.heroViz {
+  flex-shrink: 0;
+  margin-left: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroViz img {
+  display: block;
+  width: 320px;        /* bigger */
+  max-width: 35vw;
+  border-radius: 16px;
+  object-fit: cover;   /* keeps crop nice */
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* LEGEND SECTION */
+
+.legendSection {
+  background: #f7e7cf;
+  border-radius: 20px;
+  padding: 32px 40px 36px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+}
+
+.legendSection h2 {
+  margin: 0 0 20px;
+  font-size: 1.7rem;
+  color: #223a52;
+}
+
+.legendGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.legendItem {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.legendItem h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: #223a52;
+}
+
+.legendItem p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2f4b63;
+  line-height: 1.6;
+}
+
+/* SOURCES SECTION */
+
+.sourcesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Each big source card */
+.sourceCard {
+  background: #f7e7cf;
+  border-radius: 20px;
+  padding: 28px 40px 32px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+.sourceHeader {
+  margin-bottom: 18px;
+}
+
+.sourceTag {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  color: #b1926b;
+  margin-bottom: 6px;
+}
+
+.sourceHeader h2 {
+  margin: 0 0 6px;
+  font-size: 1.6rem;
+  color: #223a52;
+}
+
+.sourceCitation {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3a5973;
+}
+
+/* three-column body inside each source */
+.sourceBody {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.sourceColumn h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: #223a52;
+}
+
+.sourceColumn p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2f4b63;
+  line-height: 1.6;
+}
+
+.sourceColumn ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.95rem;
+  color: #2f4b63;
+  line-height: 1.6;
+}
+
+.sourceColumn li + li {
+  margin-top: 4px;
+}
+
+/* PATTERNS / SYNTHESIS */
+
+.patternsSection {
+  background: #f7e7cf;
+  border-radius: 20px;
+  padding: 28px 40px 32px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+  margin-top: 8px;
+}
+
+.patternsSection h2 {
+  margin: 0 0 18px;
+  font-size: 1.7rem;
+  color: #223a52;
+}
+
+.patternsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.patternCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.patternCard h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: #223a52;
+}
+
+.patternCard p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2f4b63;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 960px) {
+
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px 32px;
+  }
+
+  .heroText {
+    max-width: 100%;
+  }
+
+  .heroViz {
+    margin-left: 0;
+    margin-top: 24px;
+    align-self: center;
+  }
+
+  .heroViz img {
+    width: 220px;
+    max-width: 70vw;
+  }
+
+  .legendGrid,
+  .sourceBody,
+  .patternsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sourceCard,
+  .patternsSection,
+  .legendSection {
+    padding: 24px 20px 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroText h1 {
+    font-size: 2.1rem;
+  }
+
+  .heroText p {
+    font-size: 0.98rem;
+  }
+
+  .legendSection h2,
+  .patternsSection h2 {
+    font-size: 1.4rem;
+  }
+}

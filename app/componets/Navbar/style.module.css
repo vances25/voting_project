@@ -1,0 +1,127 @@
+/* NAV BAR WRAPPER */
+.nav_bar {
+  font-size: 1rem;
+  width: 88%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;        /* slightly shorter bar */
+  padding: 6px 0;          /* less vertical padding */
+  margin: 8px auto 0;      /* small top margin, centered */
+  z-index: 99;
+}
+
+/* LOGO IMAGE */
+.logo_img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* LOGO LINK */
+.the_logo a {
+  display: flex;           /* keeps image aligned */
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.the_logo a:hover {
+  transform: rotate(-3deg) scale(1.03);
+}
+
+/* NAV LINKS ROW */
+.nav_links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  position: relative;
+}
+
+/* EACH TOP-LEVEL ITEM */
+.nav_item {
+  position: relative;
+}
+
+.nav_item button {
+  background: none;
+  border: none;
+  color: #f9ebd9;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 6px 4px;        /* a bit tighter */
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.15s ease, opacity 0.15s ease;
+}
+
+.nav_item button:hover {
+  opacity: 0.8;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  background-color: #f9ebd9;
+  border-radius: 8px;
+  min-width: 200px;
+  flex-direction: column;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.dropdown a {
+  padding: 10px 16px;
+  color: #2b4763;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.dropdown a:hover {
+  background-color: #edd8c0;
+}
+
+/* SHOW DROPDOWN (hover for desktop, focus for mobile tap) */
+.nav_item:hover .dropdown {
+  display: flex;
+}
+
+.nav_item:focus-within .dropdown {
+  display: flex;
+}
+
+/* ------- MOBILE ------- */
+@media (max-width: 768px) {
+  .nav_bar {
+    width: 92%;
+    margin-top: 4px;
+  }
+
+  .nav_links {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav_item button {
+    font-size: 0.85rem;
+    padding: 4px 2px;
+  }
+
+  /* keep menus on screen */
+  .dropdown {
+    left: auto;
+    right: 0;
+    min-width: 160px;
+    max-width: 70vw;
+    font-size: 0.8rem;
+    white-space: normal;
+  }
+}
