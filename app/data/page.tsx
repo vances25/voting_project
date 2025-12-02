@@ -403,6 +403,53 @@ export default function DataEvidence() {
           </article>
         </section>
 
+        {/* CNN – TikTok & BLM Activism */}
+<article id="cnn-janfaza" className={styles.sourceCard}>
+  <header className={styles.sourceHeader}>
+    <p className={styles.sourceTag}>Real-World Case</p>
+    <h2>Janfaza (2020)</h2>
+    <p className={styles.sourceCitation}>
+      Janfaza, R. (2020, June 4). <em>TikTok serves as hub for #BlackLivesMatter activism.</em> CNN. 
+      https://www.cnn.com/2020/06/04/politics/tik-tok-black-lives-matter/index.html
+    </p>
+  </header>
+
+  <div className={styles.sourceBody}>
+    <div className={styles.sourceColumn}>
+      <h3>Source Snapshot</h3>
+      <p>
+        This CNN article looks at how TikTok became a major space for activism during the 
+        2020 Black Lives Matter movement. Young creators used short videos to explain events, 
+        spread information, and motivate others to get involved.
+      </p>
+    </div>
+
+    <div className={styles.sourceColumn}>
+      <h3>Key Findings</h3>
+      <ul>
+        <li>
+          TikTok helped political messages spread <strong>extremely quickly</strong> through short videos.
+        </li>
+        <li>
+          Many users learned about political events <strong>accidentally</strong> while scrolling.
+        </li>
+        <li>
+          Gen Z used TikTok not just for posting, but also for organizing, educating, and protesting.
+        </li>
+      </ul>
+    </div>
+
+    <div className={styles.sourceColumn}>
+      <h3>Why It Matters Here</h3>
+      <p>
+        This source shows how algorithms can push political content into users’ feeds even when 
+        they are not looking for it. It supports the idea that social media can shape opinions and 
+        <strong> increase political motivation</strong> without users realizing it.
+      </p>
+    </div>
+  </div>
+</article>
+
         {/* SYNTHESIS / PATTERNS */}
         <section className={styles.patternsSection}>
           <h2>Big Patterns Across the Evidence</h2>

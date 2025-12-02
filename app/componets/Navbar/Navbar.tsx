@@ -54,6 +54,8 @@ export default function Navbar() {
             <a href="/data#pew">Pew Research (2022)</a>
             <a href="/data#bbc">BBC: 2016 Election</a>
             <a href="/data#interview">Interview (Primary Source)</a>
+            <a href="/data#cnn-janfaza">Janfaza (2020)</a>
+
           </div>
         </div>
 
