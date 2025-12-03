@@ -28,12 +28,18 @@ export default function Effects() {
             <p className={styles.effectsHeroText}>
               From algorithms to echo chambers, this page walks through how
               platforms filter information long before we ever decide to vote.
+              All of the ideas here are connected to the studies and reports
+              summarized on the <strong>Data &amp; Evidence</strong> page.
             </p>
 
             <div className={styles.effectsHeroChips}>
-              <button type="button">Algorithms</button>
-              <button type="button">Echo Chambers</button>
-              <button type="button">Motivation</button>
+              <a href="#algorithms">Algorithms</a>
+              <a href="#echo-chambers">Echo Chambers</a>
+              <a href="#motivation">Motivation</a>
+            </div>
+
+            <div className={styles.heroEvidenceLink}>
+              <a href="/data">See all sources on Data &amp; Evidence →</a>
             </div>
           </div>
         </section>
@@ -48,7 +54,8 @@ export default function Effects() {
             <h2 id="algorithms-heading">What Algorithms Actually Do</h2>
             <p>
               Platforms rank posts based on engagement, not accuracy or balance.
-              That changes what shows up at the top of your feed.
+              That changes what shows up at the top of your feed and which
+              political ideas feel “normal.”
             </p>
           </header>
 
@@ -58,7 +65,8 @@ export default function Effects() {
               <h3>Rank by Reaction</h3>
               <p>
                 Posts with strong likes, comments, and watch time get pushed to
-                the top, even if they’re oversimplified or misleading.
+                the top, even if they’re oversimplified, emotional, or
+                misleading.
               </p>
             </article>
 
@@ -66,8 +74,8 @@ export default function Effects() {
               <span className={styles.stepNumber}>2</span>
               <h3>Learn Your Preferences</h3>
               <p>
-                The system quietly tracks what you pause on, share, or save, and
-                learns which topics keep you scrolling.
+                The system quietly tracks what you pause on, share, or save and
+                learns which topics keep you scrolling the longest.
               </p>
             </article>
 
@@ -76,10 +84,26 @@ export default function Effects() {
               <h3>Narrow the Feed</h3>
               <p>
                 Over time, your feed shrinks to a small slice of everything
-                online, making some viewpoints feel “normal” and others
-                practically invisible.
+                online, making some viewpoints feel “normal” and others almost
+                invisible.
               </p>
             </article>
+          </div>
+
+          {/* Evidence strip for algorithms / exposure / turnout */}
+          <div className={styles.evidenceStrip}>
+            <p className={styles.evidenceLabel}>Backed by:</p>
+            <a href="/data#levy" className={styles.evidenceLink}>
+              Levy (2021) – feeds &amp; polarization
+            </a>
+            <span className={styles.evidenceDot}>•</span>
+            <a href="/data#fujiwara" className={styles.evidenceLink}>
+              Fujiwara et al. (2021) – social media &amp; turnout
+            </a>
+            <span className={styles.evidenceDot}>•</span>
+            <a href="/data#janfaza" className={styles.evidenceLink}>
+              Janfaza (2020) – TikTok &amp; activism
+            </a>
           </div>
         </section>
 
@@ -94,7 +118,7 @@ export default function Effects() {
             <p>
               Many people mostly see viewpoints that fit their existing beliefs.
               Over time, that can make disagreement feel rare, extreme, or even
-              dangerous.
+              dangerous — especially when every screen looks the same.
             </p>
 
             <h3 className={styles.echoSubheading}>
@@ -107,9 +131,26 @@ export default function Effects() {
                 them.
               </li>
               <li>
-                It feels like “everyone” you know online agrees with you.
+                It feels like “everyone” you know online agrees with you about
+                politics.
               </li>
             </ul>
+
+            {/* Evidence strip for echo chambers / democracy / meddling */}
+            <div className={styles.evidenceStrip}>
+              <p className={styles.evidenceLabel}>Seen in:</p>
+              <a href="/data#pew" className={styles.evidenceLink}>
+                Pew (2022) – democracy &amp; division online
+              </a>
+              <span className={styles.evidenceDot}>•</span>
+              <a href="/data#bbc" className={styles.evidenceLink}>
+                BBC (2018) – targeted election meddling
+              </a>
+              <span className={styles.evidenceDot}>•</span>
+              <a href="/data#janfaza" className={styles.evidenceLink}>
+                Janfaza (2020) – TikTok as a political hub
+              </a>
+            </div>
           </div>
 
           <aside className={styles.echoCaseCard}>
@@ -120,7 +161,17 @@ export default function Effects() {
               />
             </figure>
             <p className={styles.echoCaseCaption}>
-Inside an algorithm bubble, you mostly see the same reactions, comments, and creators — which makes it feel like everyone agrees with you.            </p>
+              Algorithms repeat content from the same side over and over. Studies show this
+            doesn’t change your beliefs instantly — it changes what feels normal, visible,
+            and socially supported.
+            </p>
+
+            <div className={styles.caseLinkBlock}>
+              <p className={styles.caseLabel}>Real-world example:</p>
+              <a href="/data#cnn-janfaza" className={styles.caseLink}>
+                TikTok &amp; #BlackLivesMatter – how activism spreads →
+              </a>
+            </div>
           </aside>
         </section>
 
@@ -147,14 +198,31 @@ Inside an algorithm bubble, you mostly see the same reactions, comments, and cre
               instead of a passive scroller.
             </p>
           </div>
+
+          {/* Evidence strip for motivation / why people vote / personal story */}
+          <div className={styles.evidenceStrip}>
+            <p className={styles.evidenceLabel}>Connects to:</p>
+            <a href="/data#ali-lin" className={styles.evidenceLink}>
+              Ali &amp; Lin (2013) – why people feel like voting
+            </a>
+            <span className={styles.evidenceDot}>•</span>
+            <a href="/data#interview" className={styles.evidenceLink}>
+              Primary interview – how one voter experiences feeds
+            </a>
+            <span className={styles.evidenceDot}>•</span>
+            <a href="/data#patterns" className={styles.evidenceLink}>
+              Big patterns – motives + feeds = action
+            </a>
+          </div>
         </section>
 
-              {/* NEXT STEPS / CROSS-LINKS */}
+        {/* NEXT STEPS / CROSS-LINKS */}
         <section className={styles.nextStepsSection}>
           <h2>Where to Go Next</h2>
           <p>
-            Now that you’ve seen how feeds work, you can dig into the research 
-            behind these ideas or turn what you learned into an actual voting plan.
+            Now that you’ve seen how feeds work, you can dig into the research
+            behind these ideas or turn what you learned into an actual voting
+            plan.
           </p>
 
           <div className={styles.nextStepsGrid}>
@@ -162,9 +230,12 @@ Inside an algorithm bubble, you mostly see the same reactions, comments, and cre
               <h3>See the Research</h3>
               <p>
                 Visit the Data &amp; Evidence page for short, readable
-                breakdowns of the main studies behind this project.
+                breakdowns of the main studies and real-world cases behind this
+                project.
               </p>
-              <span className={styles.nextLink}>Go to Data &amp; Evidence →</span>
+              <span className={styles.nextLink}>
+                Go to Data &amp; Evidence →
+              </span>
             </a>
 
             <a href="/action" className={styles.nextCard}>
@@ -177,8 +248,6 @@ Inside an algorithm bubble, you mostly see the same reactions, comments, and cre
             </a>
           </div>
         </section>
-
-
       </main>
     </div>
   );

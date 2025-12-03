@@ -444,3 +444,124 @@
     height: 96px;
   }
 }
+/* ---------------------------------------------------
+   CREATOR CARD
+--------------------------------------------------- */
+
+.creatorSection {
+  width: 80%;
+  max-width: 1100px;
+
+  border-radius: 20px;
+  padding: 28px 36px 30px;
+
+  margin-bottom: 40px;
+}
+
+.creatorCard {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.creatorAvatar {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 20%, #f4c1a6, #4a6578);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.creatorAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the circle better */
+}
+
+.creatorText {
+  flex: 1;
+  color: #2b4763;
+}
+
+.creatorText h2 {
+  margin: 0 0 10px;
+  font-size: 1.6rem;
+}
+
+.creatorText p {
+  margin: 0 0 10px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #37536b;
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .hero,
+  .snapshot,
+  .timelineSection,
+  .whySection,
+  .creatorSection {
+    width: 90%;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroImage {
+    width: 100%;
+  }
+
+  .heroImage img {
+    max-width: 560px;
+  }
+
+  .snapshotGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .whySection {
+    grid-template-columns: 1fr;
+  }
+
+  .creatorCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timelineItem {
+    column-gap: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 32px 24px;
+    margin-top: 0px;
+  }
+
+  .heroText h1 {
+    font-size: 2rem;
+  }
+
+  .snapshot,
+  .timelineSection,
+  .whySection,
+  .creatorSection {
+    padding: 24px 20px;
+  }
+
+  .creatorAvatar {
+    width: 96px;
+    height: 96px;
+  }
+}

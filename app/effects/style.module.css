@@ -9,6 +9,77 @@
   align-items: center;
 }
 
+.effectsHeroChips a {
+  display: inline-flex;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #d0d8e6;
+  background: #f5f7fc;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #243b54;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.heroEvidenceLink {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.heroEvidenceLink a {
+  color: #243b54;
+  text-decoration: underline;
+}
+
+/* Evidence strips */
+.evidenceStrip {
+  margin-top: 18px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background-color: #e8f1fb;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.evidenceLabel {
+  margin: 0;
+  font-weight: 600;
+  color: #243b54;
+}
+
+.evidenceLink {
+  text-decoration: underline;
+  color: #314a63;
+  white-space: nowrap;
+}
+
+.evidenceDot {
+  color: #7a8ca3;
+}
+
+/* Case link inside echo card */
+.caseLinkBlock {
+  margin-top: 10px;
+}
+
+.caseLabel {
+  margin: 0 0 4px;
+  font-size: 0.86rem;
+  color: #d7e3f7;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.caseLink {
+  font-size: 0.92rem;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 .main {
   width: 100%;
   display: flex;
