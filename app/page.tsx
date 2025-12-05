@@ -3,6 +3,7 @@
 import styles from "./style.module.css";
 import Navbar from "./componets/Navbar/Navbar";
 import { useRouter } from "next/navigation";
+import Footer from "./componets/Footer/Footer";
 
 export default function Home() {
 
@@ -71,25 +72,12 @@ export default function Home() {
   </div>
 
 </section>
-  {/* FOOTER */}
-      <footer className={styles.footer}>
-        <div className={styles.footerInner}>
-          <div className={styles.footerLeft}>
-            <h3>Feed to Vote Project</h3>
-            <p>Exploring how social media shapes voter motivation and participation.</p>
-          </div>
+  
 
-          <div className={styles.footerLinks}>
-            <a href="#about">About</a>
-            <a href="#evidence">Sources</a>
-            <a href="#action">Take Action</a>
-          </div>
 
-          <div className={styles.footerRight}>
-            <p>Made by Vance Schaefer • WRIT 1301 • 2025</p>
-          </div>
-        </div>
-      </footer>
+
+    <Footer/>
+
       </div>
     </>
   );

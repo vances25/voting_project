@@ -2,6 +2,7 @@
 
 import Navbar from "../componets/Navbar/Navbar";
 import styles from "./style.module.css";
+import Footer from "../componets/Footer/Footer";
 
 export default function TakeAction() {
   return (
@@ -168,6 +169,9 @@ export default function TakeAction() {
           </div>
         </section>
       </main>
+
+      <Footer/>
+
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Navbar from "../componets/Navbar/Navbar";
 import styles from "./style.module.css";
+import Footer from "../componets/Footer/Footer"
 
 export default function Effects() {
   return (
@@ -249,6 +250,8 @@ export default function Effects() {
           </div>
         </section>
       </main>
+
+      <Footer/>
     </div>
   );
 }

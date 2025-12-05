@@ -1,5 +1,7 @@
 import Navbar from "../componets/Navbar/Navbar";
 import styles from "./style.module.css";
+import Footer from "../componets/Footer/Footer";
+
 
 export default function DataEvidence() {
   return (
@@ -482,6 +484,9 @@ export default function DataEvidence() {
           </div>
         </section>
       </main>
+
+    <Footer/>
+
     </div>
   );
 }

@@ -3,6 +3,7 @@
 
 import Navbar from "../componets/Navbar/Navbar";
 import styles from "./style.module.css";
+import Footer from "../componets/Footer/Footer"
 
 export default function About() {
   return (
@@ -191,6 +192,7 @@ export default function About() {
           </aside>
         </section>
 
+
         {/* CREATOR CARD  --------------------------------------------------- */}
         <section
           className={styles.creatorSection}
@@ -222,6 +224,9 @@ export default function About() {
           </div>
         </section>
       </main>
+
+    <Footer/>
+
     </div>
   );
 }
